@@ -1,1 +1,1 @@
-C++ implementation of Data Encryption Standard and Advanced Encryption Standard. 
+C++ implementation of [Data Encryption Standard](http://csrc.nist.gov/publications/fips/fips46-3/fips46-3.pdf) and [Advanced Encryption Standard](http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf). 
