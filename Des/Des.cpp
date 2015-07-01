@@ -233,7 +233,21 @@ bitset<64> charToBitset(const char s[8])
 			bits[i*8+j] = ((s[i]>>j) & 1);
 	return bits;
 }
-
+/**
+ *  工具函数：将二进制传化成string
+ */
+string BitsetTostring(bitset<64> bit){
+	string res;
+	for(int i=0;i<8;++i){
+		char c=0x00;
+		for(int j=7;j>=0;j--){
+			c = c + bit[i*8 + j];		
+			if(j!=0) c =c *2;//left shift
+		}		
+		res.push_back(c);
+	}
+	return res;
+}
 /**
  *  DES加密
  */
